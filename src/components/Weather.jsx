@@ -22,6 +22,7 @@ class Weather extends Component {
   }
 
   getWeatherData = (city) => {
+  console.log (process.env)
     const API_KEY = 'c390381fe9a60f05cac4c37e0b045ad9';
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_KEY}`;
     fetch(url)
